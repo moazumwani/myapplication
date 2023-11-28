@@ -1,5 +1,6 @@
 // Table.js
 import React from 'react';
+import "./linechart.css";
 // import ReactSalesFlag from 'react-Sales-flag';
 
 const Table = () => {
@@ -12,7 +13,7 @@ const Table = () => {
   ];
 
   return (
-    <div>
+    <div className='container-table'>
 <h2><b>Top Channels</b></h2>
 <table style={{ width: '100%' }}>
       <thead>

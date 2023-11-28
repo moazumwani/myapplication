@@ -1,5 +1,6 @@
 import React from "react";
-import { PieChart, Pie, Tooltip, ResponsiveContainer } from "recharts";
+import "./linechart.css";
+import { PieChart, Pie, Tooltip} from "recharts";
 
 const PieCharts = () => {
   const data = [
@@ -11,24 +12,24 @@ const PieCharts = () => {
   console.log(data)
 
   return (
-    <div>
+    <div className="container-piechart">
       <h1>Top Countries</h1>
-      <ResponsiveContainer width={400} height={400}>
-        <PieChart width={400} height={400}>
+      
+        <PieChart width={300} height={250}>
           <Pie
             dataKey="value"
             isAnimationActive={false}
             data={data}
-            cx={200}
-            cy={200}
-            outerRadius={80}
+            cx={120}
+            cy={130}
+            outerRadius={70}
             fill="#8884d8"
             label
           />
           
           <Tooltip />
         </PieChart>
-      </ResponsiveContainer>
+      
     </div>
   );
 };

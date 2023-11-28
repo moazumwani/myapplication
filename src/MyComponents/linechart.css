@@ -1,0 +1,88 @@
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 65px;
+}
+.linechart1{
+    background-color: brown;
+    /* padding-left: 400px; */
+    border-width: 4px; 
+    border-style: solid;
+    border-color: blue;
+    /* margin-top: 200; */
+    /* margin-bottom: 30;
+    margin-left: 300;
+    margin-right: 0; */
+    /* padding: 10,20,30,0; */
+    /* width: 600px;
+    /* height: 85vh; */
+} 
+.linechart2{
+background-color: rgb(0, 159, 64);
+border-width: 4px; 
+    border-style: solid;
+    border-color: blue;
+}
+.linechart3{
+background-color: blueviolet;
+border-width: 4px; 
+    border-style: solid;
+    border-color: blue;
+}
+.container-Barcharts{
+    background-color: rgb(226, 43, 180);
+    border-width: 4px; 
+    border-style: solid;
+    border-color: blue;
+    margin-left: 300px;
+    
+    width:500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.container-StackedAreachart{
+    background-color: chartreuse;
+    width: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-left: 821px;
+    margin-top: -292px;
+    border-width: 4px; 
+    border-style: solid;
+    border-color: blue;
+}
+.container-piechart{
+    background-color: bisque;
+    border-width: 4px; 
+    border-style: solid;
+    border-color: blue;
+    width: 400px;
+    /* padding: 10px;
+     */
+     margin-top: 21px;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 300px;
+    height: 238px; 
+}
+.container-table{
+    background-color: darkgoldenrod;
+    /* margin-left: 300px; */
+    float: right;
+    margin-top: -239px;
+    border-width: 4px; 
+    border-style: solid;
+    border-color: blue;
+    width: 650px;
+    height: 238px;
+    margin-right: 110px;
+}

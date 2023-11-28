@@ -2,7 +2,7 @@ import './App.css';
 import 'flowbite';
 import Header from './MyComponents/Headers';
 import {Footer} from './MyComponents/Footer';
-import MyChart from './MyComponents/MyChart';
+
 import BarCharts from './MyComponents/BarCharts';
 import PieCharts from './MyComponents/PieCharts';
 import LineChart from './MyComponents/LineChart';
@@ -22,20 +22,26 @@ function App() {
   return (
     <div className="App">
       <SideBar/>
+      <LineChart/>
+      <BarCharts/>
+      <StackedAreaCharts/>
+      <PieCharts/>
+    <Table/>
+    
+
     {/* <Header/> */}
-    {/* <PieCharts/>
-    <LineChart/>
-     <StackedAreaCharts/> */}
-<CustomerTable />
+    
+    
+{/* <CustomerTable /> */}
 
      <>
-<BarChartStackedBySign/>
+{/* <BarChartStackedBySign/> */}
 
      {/* <Footer/> */}
-     <BarCharts/>
+     
      {/* <SalesGraph/> */}
-<Table/>
-<HorizontalBarChart/>
+
+{/* <HorizontalBarChart/> */}
 {/* <DCT/> */}
      </>
 

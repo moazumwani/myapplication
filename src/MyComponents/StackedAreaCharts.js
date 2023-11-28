@@ -1,5 +1,6 @@
 import React from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import "./linechart.css";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 
 
@@ -12,25 +13,25 @@ const StackedAreaCharts = () => {
           amt: 2400,
         },
         {
-          name: 'Page B',
+          name: '',
           uv: 3000,
           pv: 1398,
           amt: 2210,
         },
         {
-          name: 'Page C',
+          name: '',
           uv: 2000,
           pv: 9800,
           amt: 2290,
         },
         {
-          name: 'Page D',
+          name: '',
           uv: 2780,
           pv: 3908,
           amt: 2000,
         },
         {
-          name: 'Page E',
+          name: '',
           uv: 1890,
           pv: 4800,
           amt: 2181,
@@ -53,13 +54,13 @@ const StackedAreaCharts = () => {
 console.log(data)
 
   return (
-    <div className='StackedAreachart'>
-       <ResponsiveContainer width={500} height={300}>
+    <div className='container-StackedAreachart'>
+       
         <h3><b>AVG Order Value</b></h3>
         <h4><b>$72</b></h4>
         <AreaChart
-          width={500}
-          height={400}
+          width={450}
+          height={286}
           data={data}
           margin={{
             top: 30,
@@ -76,7 +77,7 @@ console.log(data)
           <Area type="monotone" dataKey="pv" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
           <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
         </AreaChart>
-      </ResponsiveContainer>
+      
     </div>
   );
 };

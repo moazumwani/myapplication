@@ -1,5 +1,6 @@
 import React from "react";
-import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import "./linechart.css";
+import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 const BarCharts = () => {
     const data = [
         {
@@ -49,12 +50,12 @@ const BarCharts = () => {
 
       
     return (
-        <div>
-            <ResponsiveContainer  width={400} height={400}>
+        <div className="container-Barcharts">
+            
                 <h4><b>Direct vs Indirect</b></h4>
         <BarChart
-          width={500}
-          height={300}
+          width={450}
+          height={260}
           data={data}
           margin={{
             top: 5,
@@ -74,7 +75,7 @@ const BarCharts = () => {
           <Bar dataKey="Indirect" fill="#8884d8" activeBar={<Rectangle fill="pink" stroke="blue" />} />
           <Bar dataKey="direct" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
         </BarChart>
-      </ResponsiveContainer>
+      
         </div>
     );
 };
