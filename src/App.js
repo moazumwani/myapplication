@@ -1,23 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import 'flowbite';
+import Header from './MyComponents/Headers';
+import {Footer} from './MyComponents/Footer';
+import MyChart from './MyComponents/MyChart';
+import BarCharts from './MyComponents/BarCharts';
+import PieCharts from './MyComponents/PieCharts';
+import LineChart from './MyComponents/LineChart';
+import { PieChart } from 'recharts';
+import StackedAreaCharts from './MyComponents/StackedAreaCharts';
+import SalesGraph from './MyComponents/SalesComparisonGraph';
+import BarChartStackedBySign from './MyComponents/BarChartStackedBySign';
+import CustomerTable from './MyComponents/CustomerTable';
+import Table from './MyComponents/Table';
+import HorizontalBarChart from './MyComponents/HorizontalBarChart';
+import { SideBar } from './MyComponents/SideBar';
+import DCT from './MyComponents/DCT';
 
 function App() {
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideBar/>
+    {/* <Header/> */}
+    {/* <PieCharts/>
+    <LineChart/>
+     <StackedAreaCharts/> */}
+<CustomerTable />
+
+     <>
+<BarChartStackedBySign/>
+
+     {/* <Footer/> */}
+     <BarCharts/>
+     {/* <SalesGraph/> */}
+<Table/>
+<HorizontalBarChart/>
+{/* <DCT/> */}
+     </>
+
     </div>
   );
 }
