@@ -6,83 +6,199 @@
     flex-wrap: wrap;
     justify-content: right;
     padding: 65px;
+    /* width: 1150px; */
 }
 .linechart1{
-    background-color: brown;
-    /* padding-left: 400px; */
+    background-color: rgb(178, 182, 179);
     border-width: 4px; 
     border-style: solid;
-    border-color: blue;
-    /* margin-top: 200; */
-    /* margin-bottom: 30;
-    margin-left: 300;
-    margin-right: 0; */
-    /* padding: 10,20,30,0; */
-    /* width: 600px;
-    /* height: 85vh; */
+    border-color: rgb(249, 249, 255);
+    width: 390px;
+   
 } 
 .linechart2{
-background-color: rgb(0, 159, 64);
+background-color: rgb(223, 228, 224);
 border-width: 4px; 
     border-style: solid;
-    border-color: blue;
+    border-color: rgb(249, 249, 255);
+    width: 390px;
 }
 .linechart3{
-background-color: blueviolet;
+background-color:rgb(223, 228, 224);
 border-width: 4px; 
     border-style: solid;
-    border-color: blue;
+    border-color: rgb(249, 249, 255);
+    width: 390px;
+}
+.conatiner-BA-SAC{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 65px;
+    padding-top: 0px;
+    margin-top: -38px;
 }
 .container-Barcharts{
-    background-color: rgb(226, 43, 180);
+    background-color: rgb(223, 228, 224);
     border-width: 4px; 
     border-style: solid;
-    border-color: blue;
-    margin-left: 300px;
+    border-color: rgb(249, 249, 255);
+    /* margin-left: 300px; */
+    height: 300px;
+    width:585px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+     justify-content: center;
+    /* align-content: center; */
+}
+.container-StackedAreachart{
+    background-color: rgb(223, 228, 224);
+    width: 585px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-left: 821px;
+    margin-top: -292px; */
+    border-width: 4px; 
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+}
+.container-pie-table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 65px;
+    padding-top: 0px;
+    margin-top: -30px;
+}
+.container-piechart{
+    background-color: rgb(223, 228, 224);
+    border-width: 4px; 
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    width: 400px;
     
-    width:500px;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    height: 324px; 
+    
+}
+.text-center {
+    
+    text-align: center;
+  }
+.legend-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .legend-item {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed for spacing */
+  }
+  
+  .legend-bullet {
+    margin-right: 5px; /* Adjust the margin as needed for spacing */
+  }
+  
+.container-table{
+    background-color: rgb(223, 228, 224);
+    /* margin-left: 300px; */
+    float: right;
+    /* margin-top: -239px; */
+    border-width: 4px; 
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    width: 770px;
+    height: 324px;
+    /* margin-right: 110px; */
+    flex-wrap: wrap;
+}
+.container-bar-sales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 65px;
+    padding-top: 0px;
+    margin-top: -30px;
+}
+.container-BarChart{
+    background-color: rgb(223, 228, 224);
+    border-width: 4px; 
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    width:585px;
+    height:300px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; */
+}
+.container-salesComp{
+    background-color: rgb(223, 228, 224);
+    border-width: 4px; 
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    width:585px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.container-customer-activity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 65px;
+    padding-top: 0px;
+    margin-top: -33px;
+}
+.container-customer{
+    background-color: rgb(223, 228, 224);
+    border-width: 4px; 
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    width: 585px;
+    height: 427px;
+}
+.container-activity{
+    background-color: rgb(223, 228, 224);
+    border-width: 4px; 
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    width: 585px;
+   height: 427px;
+}
+.container-dct{
+    background-color: blueviolet;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    padding: 150px;
+    width: 1423px;
+    height: 1000px;
 }
-.container-StackedAreachart{
-    background-color: chartreuse;
-    width: 500px;
+
+
+.container-Styles{
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin-left: 821px;
-    margin-top: -292px;
-    border-width: 4px; 
-    border-style: solid;
-    border-color: blue;
-}
-.container-piechart{
-    background-color: bisque;
-    border-width: 4px; 
-    border-style: solid;
-    border-color: blue;
-    width: 400px;
-    /* padding: 10px;
-     */
-     margin-top: 21px;
-     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: 300px;
-    height: 238px; 
-}
-.container-table{
-    background-color: darkgoldenrod;
-    /* margin-left: 300px; */
-    float: right;
-    margin-top: -239px;
-    border-width: 4px; 
-    border-style: solid;
-    border-color: blue;
-    width: 650px;
-    height: 238px;
-    margin-right: 110px;
+    background-color: blueviolet;
 }

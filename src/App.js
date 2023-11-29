@@ -1,50 +1,48 @@
-import './App.css';
-import 'flowbite';
-import Header from './MyComponents/Headers';
-import {Footer} from './MyComponents/Footer';
-
-import BarCharts from './MyComponents/BarCharts';
-import PieCharts from './MyComponents/PieCharts';
-import LineChart from './MyComponents/LineChart';
-import { PieChart } from 'recharts';
-import StackedAreaCharts from './MyComponents/StackedAreaCharts';
-import SalesGraph from './MyComponents/SalesComparisonGraph';
-import BarChartStackedBySign from './MyComponents/BarChartStackedBySign';
-import CustomerTable from './MyComponents/CustomerTable';
-import Table from './MyComponents/Table';
-import HorizontalBarChart from './MyComponents/HorizontalBarChart';
-import { SideBar } from './MyComponents/SideBar';
-import DCT from './MyComponents/DCT';
+import "./App.css";
+import "flowbite";
+import {
+  BrowserRouter as Router,
+  RouterProvider,
+  Switch,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+import BarCharts from "./MyComponents/BarCharts";
+import PieCharts from "./MyComponents/PieCharts";
+import LineChart from "./MyComponents/LineChart";
+import SalesGraph from "./MyComponents/SalesComparisonGraph";
+import { SideBar } from "./MyComponents/SideBar";
+import { Activity } from "./MyComponents/Activity";
+import DCT from "./MyComponents/DCT";
+import Headers from "./MyComponents/Headers";
+import DecisionTreeggg from "./MyComponents/DecisionTreegggg";
+import DecisionTree from "./MyComponents/DecisionTree";
 
 function App() {
-  
-
   return (
     <div className="App">
-      <SideBar/>
-      <LineChart/>
-      <BarCharts/>
-      <StackedAreaCharts/>
-      <PieCharts/>
-    <Table/>
-    
+      <Router>
+        <SideBar />
+        <Headers/>
+        <Routes>
+        {/* <Route path="/linechart1" element= /> */}
+          <Route path="/" element={
+            <>
+            
+            <LineChart />
+            <BarCharts />
+            <PieCharts />
+            <SalesGraph />
+            <Activity />
+            </>
+          }/>
+            
+          
 
-    {/* <Header/> */}
-    
-    
-{/* <CustomerTable /> */}
-
-     <>
-{/* <BarChartStackedBySign/> */}
-
-     {/* <Footer/> */}
-     
-     {/* <SalesGraph/> */}
-
-{/* <HorizontalBarChart/> */}
-{/* <DCT/> */}
-     </>
-
+          <Route path="/DCT" element={<DecisionTree/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

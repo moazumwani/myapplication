@@ -12,11 +12,7 @@ import {
 } from "recharts";
 
 const LineCharts = () => {
-  // let LinechartStyle={
-  //   top:"70vh",
-  //   width:"100%",
-
-  // };
+  
 
   const data = [
     {
@@ -56,7 +52,7 @@ const LineCharts = () => {
     },
   ];
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="container ">
@@ -82,7 +78,7 @@ const LineCharts = () => {
             <XAxis height={60} />
             <YAxis />
             <Tooltip />
-            <Legend />
+            {/* <Legend /> */}
             <Line type="monotone" dataKey="pv" stroke="#8884d8" />
             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
           </LineChart>
@@ -107,7 +103,7 @@ const LineCharts = () => {
             <XAxis dataKey="name" height={60} />
             <YAxis />
             <Tooltip />
-            <Legend />
+            {/* <Legend /> */}
             <Line type="monotone" dataKey="pv" stroke="#8884d8" />
             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
           </LineChart>
@@ -152,7 +148,7 @@ const LineCharts = () => {
             <XAxis dataKey="name" height={60} />
             <YAxis />
             <Tooltip />
-            <Legend />
+            {/* <Legend /> */}
             <Line type="monotone" dataKey="pv" stroke="#8884d8" />
             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
           </LineChart>

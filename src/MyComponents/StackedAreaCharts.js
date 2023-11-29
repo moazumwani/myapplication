@@ -5,7 +5,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts'
 
 
 const StackedAreaCharts = () => {
-    const data = [
+    const dataSAC = [
         {
           name: 'WED 20',
           uv: 4000,
@@ -51,7 +51,7 @@ const StackedAreaCharts = () => {
       ];
   
 
-console.log(data)
+// console.log(data)
 
   return (
     <div className='container-StackedAreachart'>
@@ -61,7 +61,7 @@ console.log(data)
         <AreaChart
           width={450}
           height={286}
-          data={data}
+          data={dataSAC}
           margin={{
             top: 30,
             right: 20,
