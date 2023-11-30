@@ -1,18 +1,20 @@
 // DecisionTree.js
 import React from 'react';
 import Tree from 'react-d3-tree';
-import "./linechart.css";
+
+import './linechart.css';
+
 const treeData = {
   name: 'Decision Tree',
   children: [
     {
-      name: 'Premium 30%|45%',
+      name: 'Premium ',
     },
     {
-      name: 'MainStream 30%|45%',
+      name: 'MainStream ',
     },
     {
-      name: 'Low Budget 30%|45%',
+      name: 'Low Budget ',
       children: [
         {
           name: 'Local',
@@ -24,6 +26,7 @@ const treeData = {
             { name: 'Additional 3' },
           ],
         },
+        
         {
           name: 'International',
           children: [
@@ -41,21 +44,35 @@ const treeData = {
       ],
     },
     {
-      name: 'Entry 30%|45%',
+      name: 'Entry ',
     },
   ],
 };
 
 const DecisionTree = () => {
-  const containerStyles = {
-    width: '100%',
-    height: '500px',
-    border: '1px solid #ccc',
+ 
+
+  const nodeSvgShape = {
+    shape: 'rect',
+    shapeProps: {
+      width: 120,
+      height: 30,
+      x: -60,
+      y: -15,
+      fill:'red',
+    },
   };
 
   return (
-    <div className='container-Styles' >
-      <Tree data={treeData} orientation="vertical" />
+    <div className='container-styles'>
+      <Tree
+        data={treeData}
+        orientation="vertical"
+        translate={{ x: 150, y: 70 }}
+        collapsible={false}
+        depthFactor={50}
+        nodeSvgShape={nodeSvgShape}
+      />
     </div>
   );
 };
