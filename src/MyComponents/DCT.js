@@ -4,43 +4,124 @@ import './tree.css';
 
 const DecisionTree = () => {
   const treeData = [
+    // {
+    //   id : 'Premium  30/45%',
+    //   text : '1',
+    //   diamond: false,
+    //   children:[]
+    // },
     {
-        id : '1',
-        text : 'xdbcjhsdvjcsdf',
+      id : 'Main Stram 30/45%',
+      text : '2',
+      diamond: false,
+      children:[]
+    },
+   
+    {
+        id : 'Low Budget 30%/45%',
+        text : 'Premium',
         diamond: false,
         children:[
-            {
-                id:'2',
-                text:'dvdfjvbfd',
+          // {
+          //   id:'International 30%/ 45%',
+          //               text:'7',
+          //               diamond: false,
+          //               children:[]
+          // },
+          {
+                id:'Local 30%/ 45%',
+                text:'6',
                 diamond: false,
                 children:[
                     {
-                        id:'3',
-                        text:'jkvbdfhv',
+                        id:'Brand 1',
+                        text:'7',
                         diamond: false,
                         children:[
                             {
-                                id:'4',
-                                text:'dbvhd',
+                                id:'SubBrand',
+                                text:'8',
                                 diamond: false,
+                                // children:[
+                                //   {
+                                //     id:'Category',
+                                //     text:'8',
+                                //     diamond: false,
+                                //     children:[
+                                //       {
+                                //         id:'Size',
+                                //         text:'8',
+                                //         diamond: false,
+                                //         children:[
+                                //           {
+                                //             id:'Color',
+                                //             text:'8',
+                                //             diamond: false,
+                                //         },
+                                //         ]
+                                //     },
+                                //     ]
+                                // },
+                                // ]
+                            },
+                            {
+                                id:'SubBrand',
+                                text:'88',
+                                diamond: false,
+                                children:[
+                                  {
+                                    id:'Category',
+                                    text:'8',
+                                    diamond: false,
+                                    children:[
+                                      {
+                                        id:'Size',
+                                        text:'8',
+                                        diamond: false,
+                                        children:[
+                                          {
+                                            id:'Color',
+                                            text:'8',
+                                            diamond: false,
+                                        },
+                                        ]
+                                    },
+                                    ]
+                                },
+                                ]
                             }
                         ]
                     },
                     {
-                        id:'5',
-                        text:'grgrgrefg',
+                        id:'Brand 2',
+                        text:'10',
                         diamond: false,
                         children:[
                             {
-                                id:'4',
-                                text:'dbvhd',
+                                id:'SubBrand 2',
+                                text:'11',
                                 diamond: false,
+                                
                             }
                         ]
                     }
                 ]
+            },
+            {
+              id:'Region 30%/ 45%',
+                        text:'7',
+                        diamond: false,
+                        children:[]
             }
+
         ]
+        
+    },
+    {
+      id : 'Entry',
+      text : '2',
+      diamond: false,
+      children:[]
     }
 ]
 

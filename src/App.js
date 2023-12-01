@@ -41,7 +41,7 @@ function App() {
             
           
 
-          <Route path="/DCT" element={<DecisionTree/>}/>
+          <Route path="/DCT" element={<DCT/>}/>
         </Routes>
       </Router>
     </div>
