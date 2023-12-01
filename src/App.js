@@ -16,7 +16,7 @@ import { SideBar } from "./MyComponents/SideBar";
 import { Activity } from "./MyComponents/Activity";
 import DCT from "./MyComponents/DCT";
 import Headers from "./MyComponents/Headers";
-import DecisionTreeggg from "./MyComponents/DecisionTreegggg";
+import Decision from "./MyComponents/Decision";
 import DecisionTree from "./MyComponents/DecisionTree";
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
             <PieCharts />
             <SalesGraph />
             <Activity />
+            {/* <Decision/> */}
             </>
           }/>
             

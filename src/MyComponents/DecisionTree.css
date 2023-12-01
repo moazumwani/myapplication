@@ -1,0 +1,39 @@
+/* DecisionTree.css */
+.decision-tree {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #3498db; /* Adjust colors as needed */
+    color: #fff;
+  }
+  
+  .children {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .child {
+    margin: 0 20px;
+  }
+  
+  .grandchildren {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .grandchild {
+    margin: 0 10px;
+  }
+  
