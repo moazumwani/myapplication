@@ -1,8 +1,41 @@
-// DecisionTree.js
-import React from 'react'
+import React, { useState } from 'react';
 import './tree.css';
 
 const DecisionTree = () => {
+  const [collapsedNodes, setCollapsedNodes] = useState([]);
+
+  const handleNodeToggle = (id) => {
+    if (collapsedNodes.includes(id)) {
+      setCollapsedNodes(collapsedNodes.filter((node) => node !== id));
+    } else {
+      setCollapsedNodes([...collapsedNodes, id]);
+    }
+  };
+
+  const treeRendering = (treeData) => {
+    return (
+      <>
+        <ul>
+          {treeData.map((item) => (
+            <li key={item.id} className={item.text + item.id}>
+              <div>
+                <button className='plus-minus' onClick={() => handleNodeToggle(item.id)}>
+                  {collapsedNodes && collapsedNodes.includes(item.id) ? '+' : '-'}
+                </button>
+                {item.id}
+              </div>
+              {!collapsedNodes || !collapsedNodes.includes(item.id) ? (
+                item.children && item.children.length > 0 && (
+                  <ul>{treeRendering(item.children)}</ul>
+                )
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </>
+    );
+  };
+
   const treeData = [
     // {
     //   id : 'Premium  30/45%',
@@ -125,43 +158,7 @@ const DecisionTree = () => {
     }
 ]
 
-
-return (
-  <div className="tree">
-      {
-          treeRendering(treeData)
-      }
-            
-  </div>
-      )
-  }
-  
-  
-  const treeRendering = (treeData) => {
-      
-      return (
-          <>
-                  <ul>
-              {
-                  treeData.map((item)=>                
-                      <li className={item.text+item.id}>
-                          <div>{ item.id}</div>
-                          {
-                              item.children && item.children.length ?
-                              treeRendering(item.children)
-                              :''
-                          }
-                      </li>
-                  )            
-                  
-              }
-              </ul>
-          </>
-      )
-  }
+  return <div className="tree">{treeRendering(treeData)}</div>;
+};
 
 export default DecisionTree;
-
-
-
-

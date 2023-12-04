@@ -35,7 +35,6 @@ function App() {
             <PieCharts />
             <SalesGraph />
             <Activity />
-            {/* <Decision/> */}
             </>
           }/>
             

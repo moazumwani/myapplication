@@ -6,9 +6,20 @@
     justify-content: right;
     /* width:1000px */
     /* width: 1000px; */
-    height: 750px;
+    height: 800px;
 }
+.tree button {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-right: 8px; /* Add margin to create space between the button and content */
+  }
 
+.plus-minus{
+    /* background-color:brown; */
+    color: rgb(63, 165, 42);
+    /* border: 1px solid #8d0d0d; */
+    /* width: 4px;
+    height: 6px; */
+}
 
 .tree ul {
     padding-top: 30px; position: relative;
@@ -73,6 +84,7 @@
     color: #666;
     font-family: arial, verdana, tahoma;
     font-size: 11px;
+    margin-left: 8px;
     display: inline-block;
     
     border-radius: 5px;
